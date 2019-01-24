@@ -8,13 +8,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Le Chocolat</title>
 </head>
 
 <body>
 
     <header class="jumbotron">
-        <div class="container">
+        <div class="row row-header">
             <div>
                 <div class="col-12 col-sm-8">
                     <h1>Le Chocolat</h1>
@@ -28,7 +29,7 @@
     </header>
 
     <div class="container">
-        <div class="row">
+        <div class=" row flex-row-reverse row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>Our famous chocolates</h3>
             </div>
@@ -39,7 +40,8 @@
             </div>
 
         </div>
-        <div class="row">
+
+        <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>WEEK’S OFFER</h3>
             </div>
@@ -48,8 +50,8 @@
                 <p>This week we offer a basket with 10 delicious chocolates! </p>
             </div>
         </div>
-        <div class="row">
-            <h3>WEEK’S OFFER</h3>
+
+        <div class=" row flex-row-reverse row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>Meet our Specialists</h3>
             </div>
@@ -62,12 +64,12 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-5 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -86,7 +88,7 @@
                     </address>
                 </div>
                 <div  class="col col-sm-4">
-                    <div>
+                    <div class="col-auto" style="text-align:center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -96,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-auto">
                     <p> &copy; Copyright 2018 Le Chocolat</p>
                 </div>
