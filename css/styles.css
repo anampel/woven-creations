@@ -9,19 +9,32 @@
     min-height:400px;
 }
 .footer{
+    background-color: #7e5331;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
     border-bottom: 2px ridge;
-    background: rgb(114, 255, 168);
 }
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
-    background: rgb(64, 148, 96);
+    background: #6E3F19;
     color:floralwhite;
+    border-bottom: 2px ridge;
 }
 address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
 }
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+.bg-light {
+    background-color: #d49c77 !important;
+}
+.table .thead-dark th{
+    color:floralwhite;
+    background-color:#6E3F19
+}
+tr:hover {background-color:#dbb08db0!important}
