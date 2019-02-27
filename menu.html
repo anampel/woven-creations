@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link href="css/styles.css" rel="stylesheet">
-    <title>Le Chocolat: Menu</title>
+       <!-- Required meta tags always come first -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <meta http-equiv="x-ua-compatible" content="ie=edge">
+   
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+       <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+       <link href="css/styles.css" rel="stylesheet">
+       <title>Menu</title>
+   
 
 </head>
 
@@ -23,7 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item "><a class="nav-link" href="./index.html">
                             <span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html">
@@ -33,9 +34,168 @@
                     <li class="nav-item "><a class="nav-link" href="./contactus.html">
                             <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Email
+                                address
+                            </label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">
+                                Password
+                            </label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="OrderModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Order your favourite chocolate</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row" >
+                            <label for="optradio" class="col-12 col-sm-3 col-form-label">
+                                Quantity
+                            </label>
+                            <div class="col-12 col-sm-9" >
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOption" id="numOfGram1"
+                                        value="option1">
+                                    <label class="form-check-label" for="numOfGram1"><span id="numOfGram11"></span>gr</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOption" id="numOfGram2"
+                                        value="option2">
+                                    <label class="form-check-label" for="numOfGram2"><span id="numOfGram22"></span>gr</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOption" id="numOfGram3"
+                                        value="option3">
+                                    <label class="form-check-label" for="numOfGram3"><span id="numOfGram33"></span>gr</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOption" id="numOfGram4"
+                                        value="option4">
+                                    <label class="form-check-label" for="numOfGram4"><span id="numOfGram44"></span>gr</label>
+                                </div>
+
+                                <p style="color:rgb(58, 36, 7);">OR</p>
+                                <div class="form-group">
+                                    <input type="grams" class="form-control form-control-sm mr-1" id="numOfGram"
+                                        placeholder="Enter grams">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row" >
+                                <label for="optradio" class="col-12 col-sm-3 col-form-label">
+                                    Type of chocolate 
+                                </label>
+                                <div class="col-12 col-sm-9">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco1"
+                                            value="option5">
+                                        <label class="form-check-label" for="typeOfChoco1"><span id="typeOfChoco11"></span></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco2"
+                                            value="option6">
+                                        <label class="form-check-label" for="typeOfChoco2"><span id="typeOfChoco22"></span></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco3"
+                                            value="option7">
+                                        <label class="form-check-label" for="typeOfChoco3"><span id="typeOfChoco33"></span></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco4"
+                                            value="option8">
+                                        <label class="form-check-label" for="typeOfChoco4"><span id="typeOfChoco44"></span></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco5"
+                                            value="option9">
+                                        <label class="form-check-label" for="typeOfChoco5"><span id="typeOfChoco55"></span></label>
+                                    </div>
+                                  
+                                </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="section" class="col-12 col-sm-3 col-form-label">
+                                Home Delivery
+                            </label>
+                            <div class="btn-group" data-toogle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="section" id="yes" autocomplete="off"
+                                        checked>Yes
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="section" id="no" autocomplete="off">No
+                                </label>
+                            </div>
+                        </div>
+                        <div id="vis">
+                            <p>Please, give us your address:</p>
+                            <div class="required">
+                                <label for="address">Your address:</label>
+                                <input type="address" minlength="4" name="address" id="address" placeholder="Your address goes here" required />
+                                <span id="addressInfo"></span>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm" id="Complete">
+                        Complete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -44,6 +204,9 @@
                     <h1>Le Chocolat</h1>
                     <p>We combine experience with creativity to create innovative tastes based on classic chocolate
                         recipes. Our creations will travel you in the chocolate world!</p>
+                </div>
+                <div class="col col-sm-3">
+                    <img src="images/logo.png" class="img-fluid">
                 </div>
                 <div class="col col-sm">
                 </div>
@@ -78,7 +241,8 @@
                         </p>
                         <span class="badge badge-light">Per 100gr</span>
                         <span class="badge badge-pill badge-success">$4.99</span>
-                        <a href="#" class="btn btn-outline-light">Order</a>
+                        <a type="button" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-html="true" title="Or Call us at + 987 6543 2100"
+                            data-placement="bottom" href="#OrderModal">Order</a>
                     </div>
                 </div>
             </div>
@@ -87,10 +251,11 @@
                     <div class="card-body">
                         <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/whitechoco.jpg" alt="85% DARK CHOCOLATE">
                         <h3 class="card-title">White Chocolate</h3>
-                        <p class="card-text  text-white-50">The white temptation!</p>
+                        <p class="card-text  text-white-70">The white temptation!</p>
                         <span class="badge badge-light">Per 100gr</span>
                         <span class="badge badge-pill badge-success">$5.99</span>
-                        <a href="#" class="btn btn-outline-light">Order</a>
+                        <a type="button" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-html="true" title="Or Call us at + 987 6543 2100"
+                            data-placement="bottom" href="#OrderModal">Order</a>
                     </div>
                 </div>
             </div>
@@ -99,10 +264,11 @@
                     <div class="card-body">
                         <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/milkchoco.jpg" alt="85% DARK CHOCOLATE">
                         <h3 class="card-title">Milk Chocolate</h3>
-                        <p class="card-text  text-white-50">The Real Chocolate, full of taste, flavours and imagines.</p>
+                        <p class="card-text  text-white-70">The Real Chocolate, full of taste, flavours and imagines.</p>
                         <span class="badge badge-light">Per 100gr</span>
                         <span class="badge badge-pill badge-success">$3.99</span>
-                        <a href="#" class="btn btn-outline-light">Order</a>
+                        <a type="button" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-html="true" title="Or Call us at + 987 6543 2100"
+                            data-placement="bottom" href="#OrderModal">Order</a>
                     </div>
                 </div>
             </div>
@@ -111,25 +277,28 @@
                     <div class="card-body">
                         <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/cocoa.jpeg" alt="85% DARK CHOCOLATE">
                         <h3 class="card-title">Cocoa</h3>
-                        <p class="card-text  text-white-50">The cocoa bean or cacao is the dried and fully fermented
+                        <p class="card-text  text-white-70">The cocoa bean or cacao is the dried and fully fermented
                             seed of Theobroma cacao, from which cocoa solids
                             and cocoa butter can be extracted. Cocoa beans are the basis of chocolate</p>
                         <span class="badge badge-light">Per Kilo</span>
                         <span class="badge badge-pill badge-success">$4.99</span>
-                        <a href="#" class="btn btn-outline-light">Order</a>
+                        <a type="button" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-html="true" title="Or Call us at + 987 6543 2100"
+                            data-placement="bottom" href="#OrderModal">Order</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 py-2">
-                <div class="card h-100 text-white bg-info">
+                <div class="card h-100 text-white bg-warning">
                     <div class="card-body">
-                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/cocoa.jpeg" alt="85% DARK CHOCOLATE">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/chocobars.jpg" alt="85% DARK CHOCOLATE">
                         <h3 class="card-title">Choco Bars</h3>
-                        <p class="card-text  text-white-50">Chocolate bars containing a wide variety of layerings or mixtures that include nuts, fruit, caramel, nougat, and fondant. 
+                        <p class="card-text  text-white">Chocolate bars containing a wide variety of layerings or
+                            mixtures that include nuts, fruit, caramel, nougat, and fondant.
                         </p>
-                        <span class="badge badge-light">Per piece</span>
+                        <span class="badge badge-light">Per kilo</span>
                         <span class="badge badge-pill badge-success">$5</span>
-                        <a href="#" class="btn btn-outline-light">Order</a>
+                        <a type="button" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-html="true" title="Or Call us at + 987 6543 2100"
+                            data-placement="bottom" href="#OrderModal">Order</a>
                     </div>
                 </div>
             </div>
@@ -181,6 +350,10 @@
             </div>
         </div>
     </footer>
+
+   
+    
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
