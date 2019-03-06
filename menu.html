@@ -2,17 +2,19 @@
 <html lang="en">
 
 <head>
-       <!-- Required meta tags always come first -->
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <meta http-equiv="x-ua-compatible" content="ie=edge">
-   
-       <!-- Bootstrap CSS -->
-       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-       <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-       <link href="css/styles.css" rel="stylesheet">
-       <title>Menu</title>
-   
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
+    <title>Menu</title>
+
 
 </head>
 
@@ -88,17 +90,20 @@
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
+                <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+                <link href="css/styles.css" rel="stylesheet">
+                <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
                 <div class="modal-header">
                     <h4 class="modal-title">Order your favourite chocolate</h4>
                     <button type="button" class="close" data-dismiss="modal">&times</button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="form-group row" >
+                        <div class="form-group row">
                             <label for="optradio" class="col-12 col-sm-3 col-form-label">
                                 Quantity
                             </label>
-                            <div class="col-12 col-sm-9" >
+                            <div class="col-12 col-sm-9">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOption" id="numOfGram1"
                                         value="option1">
@@ -127,48 +132,47 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row" >
-                                <label for="optradio" class="col-12 col-sm-3 col-form-label">
-                                    Type of chocolate 
-                                </label>
-                                <div class="col-12 col-sm-9">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco1"
-                                            value="option5">
-                                        <label class="form-check-label" for="typeOfChoco1"><span id="typeOfChoco11"></span></label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco2"
-                                            value="option6">
-                                        <label class="form-check-label" for="typeOfChoco2"><span id="typeOfChoco22"></span></label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco3"
-                                            value="option7">
-                                        <label class="form-check-label" for="typeOfChoco3"><span id="typeOfChoco33"></span></label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco4"
-                                            value="option8">
-                                        <label class="form-check-label" for="typeOfChoco4"><span id="typeOfChoco44"></span></label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco5"
-                                            value="option9">
-                                        <label class="form-check-label" for="typeOfChoco5"><span id="typeOfChoco55"></span></label>
-                                    </div>
-                                  
+                        <div class="form-group row">
+                            <label for="optradio" class="col-12 col-sm-3 col-form-label">
+                                Type of chocolate
+                            </label>
+                            <div class="col-12 col-sm-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco1"
+                                        value="option5">
+                                    <label class="form-check-label" for="typeOfChoco1"><span id="typeOfChoco11"></span></label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco2"
+                                        value="option6">
+                                    <label class="form-check-label" for="typeOfChoco2"><span id="typeOfChoco22"></span></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco3"
+                                        value="option7">
+                                    <label class="form-check-label" for="typeOfChoco3"><span id="typeOfChoco33"></span></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco4"
+                                        value="option8">
+                                    <label class="form-check-label" for="typeOfChoco4"><span id="typeOfChoco44"></span></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="typeOfChoco5"
+                                        value="option9">
+                                    <label class="form-check-label" for="typeOfChoco5"><span id="typeOfChoco55"></span></label>
+                                </div>
+
+                            </div>
                         </div>
-                        
+
                         <div class="form-group row">
                             <label for="section" class="col-12 col-sm-3 col-form-label">
                                 Home Delivery
                             </label>
                             <div class="btn-group" data-toogle="buttons">
                                 <label class="btn btn-success active">
-                                    <input type="radio" name="section" id="yes" autocomplete="off"
-                                        checked>Yes
+                                    <input type="radio" name="section" id="yes" autocomplete="off" checked>Yes
                                 </label>
                                 <label class="btn btn-danger">
                                     <input type="radio" name="section" id="no" autocomplete="off">No
@@ -179,7 +183,8 @@
                             <p>Please, give us your address:</p>
                             <div class="required">
                                 <label for="address">Your address:</label>
-                                <input type="address" minlength="4" name="address" id="address" placeholder="Your address goes here" required />
+                                <input type="address" minlength="4" name="address" id="address" placeholder="Your address goes here"
+                                    required />
                                 <span id="addressInfo"></span>
                             </div>
                         </div>
@@ -351,14 +356,16 @@
         </div>
     </footer>
 
-   
-    
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
     <script src="js/scripts.js"></script>
 
 </body>
