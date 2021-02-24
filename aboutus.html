@@ -12,33 +12,39 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
     <!-- endbuild -->
-    <title>Le Chocolat</title>
+    <title>Woven Creations: About Us</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
         <div class="container">
-            <a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="54"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">
-                            <span class="fa fa-home fa-lg"></span>Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">
-                            <span class="fa fa-info fa-lg"></span>About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./menu.html">
-                            <span class="fa fa-list fa-lg"></span>Menu</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            <span class="fa fa-home fa-lg"></span>&nbsp Home</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html">
-                            <span class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <span class="fa fa-info fa-lg"></span>&nbsp About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">
+                            <span class="fa fa-list fa-lg"></span>&nbsp Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">
+                            <span class="fa fa-address-card fa-lg"></span>&nbsp Contact</a>
+                    </li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a data-toggle="modal" class="btn btn-light" data-target="#loginModal">
                         <span class="fa fa-sign-in"></span> Login
-                    </a>
+                </a>
                 </span>
             </div>
         </div>
@@ -57,15 +63,13 @@
                             <label class="sr-only" for="exampleInputEmail3">Email
                                 address
                             </label>
-                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
-                                placeholder="Enter email">
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="exampleInputPassword3">
                                 Password
                             </label>
-                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
-                                placeholder="Password">
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
@@ -86,18 +90,54 @@
         </div>
     </div>
 
-    <header class="jumbotron ">
+    <header class="jumbotron">
         <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-8">
-                    <h1>Le Chocolat</h1>
-                    <p>We combine experience with creativity to create innovative tastes based on classic chocolate
-                        recipes. Our creations will travel you in the chocolate world!</p>
-                </div>
-                <div class="col col-sm-3">
-                    <img src="images/logo.png" class="img-fluid">
+            <div class="row">
+                <div class="col">
+                    <img class="rounded float-start img-fluid shadow-lg p-3 mb-5 bg-body rounded mx-auto d-block" src="images/logo.png">
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <h5 class="display-5 text-center shadow p-3 mb-5 bg-body rounded" style="color: black;">Woven clothes.. connecting people!</h5>
+                </div>
+            </div>
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <strong><a class="nav-link " style="font-family:verdana;" aria-current="page" href="../categories/women.html">Women</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a class="nav-link"style="font-family:verdana;" href="../categories/men.html">Men</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a class="nav-link" style="font-family:verdana;"href="../categories/kids.html">Kids</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a class="nav-link"style="font-family:verdana;" href="../categories/house.html">House</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a class="nav-link" style="font-family:verdana;" href="../categories/sales.html">Sales</a></strong>
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <strong><a class="nav-link" style="font-family:verdana;" href="../categories/createyourown.html">Create your own</a></strong>
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light" type="submit" alt="Search">
+                        <span class="fa fa-search"></span>
+                    </button>
+                </form>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+            </ul>
+            <!-- <div class="col-12 col-sm-3 ">
+                    <p style="padding-left:5px;"></p>
+                    <a type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-html="true" title="Or Call us at <br><strong>+ 987 6543 2100</strong>" data-placement="bottom" href="#ReserveModal">Reserve your baskets</a>
+                </div> -->
+        </div>
         </div>
     </header>
 
@@ -120,12 +160,9 @@
         <div class="row">
             <div class="col-12 col-sm-6">
                 <h2>Our History</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper nunc quis maximus
-                    pharetra. Quisque ut molestie ante. Donec mattis pharetra erat, eu ultricies ipsum faucibus et.
-                    Curabitur ultrices risus turpis, laoreet pulvinar justo interdum in. Quisque vel semper tellus.
-                    Etiam nibh arcu, sodales quis ultrices nec, egestas vitae libero. </p>
-                <p>Nulla ultrices diam at tortor volutpat, <em>et facilisis justo facilisis</em>. Phasellus dignissim
-                    euismod mi eget dignissim. Sed eget consequat urna. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper nunc quis maximus pharetra. Quisque ut molestie ante. Donec mattis pharetra erat, eu ultricies ipsum faucibus et. Curabitur ultrices risus turpis, laoreet pulvinar
+                    justo interdum in. Quisque vel semper tellus. Etiam nibh arcu, sodales quis ultrices nec, egestas vitae libero. </p>
+                <p>Nulla ultrices diam at tortor volutpat, <em>et facilisis justo facilisis</em>. Phasellus dignissim euismod mi eget dignissim. Sed eget consequat urna. </p>
             </div>
             <div class="col col-sm">
                 <div class="card">
@@ -153,71 +190,50 @@
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <h3>Jim Alcon <small>Chief Executive Officer </small></h3>
                             </button>
                         </div>
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">Jim Alcon is the CEO of our company. He is responsible for
-                                    the
-                                    policy
-                                    and
-                                    strategy of our company.
+                                <p class="d-none d-sm-block">Jim Alcon is the CEO of our company. He is responsible for the policy and strategy of our company.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingTwo">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"
-                                aria-expanded="true" aria-controls="collapseTwo">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                 <h3>Bill Peterson <small>Chief Financial Officer </small></h3>
                             </button>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">Bill Peterson is the CFO of our company. He is responsible
-                                    for all
-                                    the
-                                    financial decisions of our
-                                    company. </p>
+                                <p class="d-none d-sm-block">Bill Peterson is the CFO of our company. He is responsible for all the financial decisions of our company. </p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingThree">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree"
-                                aria-expanded="true" aria-controls="collapseThree">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                 <h3>John Cook <small>Chef</small></h3>
                             </button>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">Our Chef, John Cook has specialized in the production of
-                                    chocolates
-                                    and
-                                    he
-                                    has created the receipts
-                                    for our chocolates. </p>
+                                <p class="d-none d-sm-block">Our Chef, John Cook has specialized in the production of chocolates and he has created the receipts for our chocolates. </p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingFour">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour"
-                                aria-expanded="true" aria-controls="collapseFour">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                                 <h3>Vasilis Wilson <small>Sous-chef </small></h3>
                             </button>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">Vasilis Wilson is well informed of all the current trends
-                                    in pastry
-                                    and
-                                    contributes his innovative
-                                    ideas in our products. </p>
+                                <p class="d-none d-sm-block">Vasilis Wilson is well informed of all the current trends in pastry and contributes his innovative ideas in our products. </p>
                             </div>
                         </div>
                     </div>

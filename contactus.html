@@ -14,31 +14,38 @@
     <link href="css/styles.css" rel="stylesheet">
     <!-- endbuild -->
 
-    <title>Le Chocolat: Contact Us</title>
+    <title>Woven Creations: Contact Us</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Le Chocolat</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item "><a class="nav-link" href="./index.html">
-                            <span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">
-                            <span class="fa fa-info fa-lg"> </span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./menu.html">
-                            <span class="fa fa-list fa-lg"></span>Menu</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">
-                            <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./index.html">
+                            <span class="fa fa-home fa-lg"></span>&nbsp Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">
+                            <span class="fa fa-info fa-lg"> </span>&nbsp About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">
+                            <span class="fa fa-list fa-lg"></span>&nbsp Menu</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <span class="fa fa-address-card fa-lg"></span>&nbsp Contact</a>
+                    </li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a data-toggle="modal" class="btn btn-light" data-target="#loginModal">
                         <span class="fa fa-sign-in"></span> Login
-                    </a>
+                </a>
                 </span>
             </div>
         </div>
@@ -57,15 +64,13 @@
                             <label class="sr-only" for="exampleInputEmail3">Email
                                 address
                             </label>
-                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
-                                placeholder="Enter email">
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="exampleInputPassword3">
                                 Password
                             </label>
-                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
-                                placeholder="Password">
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
@@ -88,18 +93,52 @@
 
     <header class="jumbotron">
         <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-8">
-                    <h1>Le Chocolat</h1>
-                    <p>We combine experience with creativity to create innovative tastes based on classic chocolate
-                        recipes. Our creations will travel you in the chocolate world!</p>
-                </div>
-                <div class="col col-sm-3">
-                    <img src="images/logo.png" class="img-fluid">
-                </div>
-                <div class="col col-sm">
+            <div class="row">
+                <div class="col">
+                    <img class="rounded float-start img-fluid shadow-lg p-3 mb-5 bg-body rounded mx-auto d-block" src="images/logo.png">
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <h5 class="display-5 text-center shadow p-3 mb-5 bg-body rounded" style="color: black;">Woven clothes.. connecting people!</h5>
+                </div>
+            </div>
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <strong><a class="nav-link " style="font-family:verdana;" aria-current="page" href="../categories/women.html">Women</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a class="nav-link"style="font-family:verdana;" href="../categories/men.html">Men</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a class="nav-link" style="font-family:verdana;"href="../categories/kids.html">Kids</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a class="nav-link"style="font-family:verdana;" href="../categories/house.html">House</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a class="nav-link" style="font-family:verdana;" href="../categories/sales.html">Sales</a></strong>
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <strong><a class="nav-link" style="font-family:verdana;" href="../categories/createyourown.html">Create your own</a></strong>
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light" type="submit" alt="Search">
+                        <span class="fa fa-search"></span>
+                    </button>
+                </form>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+            </ul>
+            <!-- <div class="col-12 col-sm-3 ">
+                    <p style="padding-left:5px;"></p>
+                    <a type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-html="true" title="Or Call us at <br><strong>+ 987 6543 2100</strong>" data-placement="bottom" href="#ReserveModal">Reserve your baskets</a>
+                </div> -->
+        </div>
         </div>
     </header>
 
@@ -124,23 +163,25 @@
             <div class="col-12 col-sm-4 offset-sm-1">
                 <h5>Our Address</h5>
                 <address style="font-size: 100%">
-                    121, Clear Wave Road<br>
-                    Clear Wave Road, Aloha<br>
-                    HAWAII<br>
+                    11145<br>
+                    Stratigou Kalari 53, Athens<br>
+                    Greece<br>
                     <i class="fa fa-phone"></i>: +987 6543 2100<br>
                     <i class="fa fa-fax"></i>: +987 6543 2101<br>
                     <i class="fa fa-envelope"></i>:
-                    <a href="mailto:chocolat@nomail.net">chocolat@nomail.net</a>
+                    <a href="mailto:wovencreations@nomail.net">wovencreations@nomail.net</a>
                 </address>
             </div>
-            <div class="col-12 col-sm-6 offset-sm-1">
+            <div id="googleMap" class="col-12 col-sm-6 offset-sm-1">
                 <h5>Map of our Location</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.462129686126!2d23.72031991518155!3d38.01300457971675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a2ddc50c945f%3A0x7a0eaf15d84f085f!2zzqPPhM-BLiDOms6xzrvOu86sz4HOtyA1MywgzpHOuM6uzr3OsSAxMDQgNDU!5e0!3m2!1sel!2sgr!4v1614203750926!5m2!1sel!2sgr"
+                    width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="col-12 col-sm-11 offset-sm-1">
                 <div class="btn-group" role="group" aria-label="Communication tools">
                     <a role="button" class="btn btn-primary" href="tel:+98765432100 "><i class="fa fa-phone"></i> Call</a>
                     <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
-                    <a role="button" class="btn btn-success" href="mailto:chocolat@nomail.net">
+                    <a role="button" class="btn btn-success" href="mailto:wovencreations@nomail.net">
                         <i class="fa fa-envelope-o"></i> Email</a>
                 </div>
             </div>
@@ -168,9 +209,9 @@
                         <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
                         <div class="col-5 col-sm-4 col-md-3">
                             <div class="input-group">
-                                <div class="input-group-addon">(</div>
+                                <div class="input-group-addon"></div>
                                 <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
-                                <div class="input-group-addon">)</div>
+                                <div class="input-group-addon"></div>
                             </div>
                         </div>
                         <div class="col-7 col-sm-6 col-md-7">

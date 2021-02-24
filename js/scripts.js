@@ -1,9 +1,9 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $("#mycarousel").carousel({ interval: 2000 });
-    $("#carousel-pause").click(function () {
+    $("#carousel-pause").click(function() {
         $("#mycarousel").carousel('pause');
     });
-    $("#carousel-play").click(function () {
+    $("#carousel-play").click(function() {
         $("#mycarousel").carousel('cycle');
     });
 });
@@ -21,7 +21,7 @@ document.getElementById("numOfGram22").innerHTML = gram[1];
 document.getElementById("numOfGram33").innerHTML = gram[2];
 document.getElementById("numOfGram44").innerHTML = gram[3];
 
-st2.onchange = function () {
+st2.onchange = function() {
     quantity = document.getElementById("numOfGram").value
     if (isNaN(quantity)) {
         console.log("This is not a number")
@@ -39,7 +39,7 @@ document.getElementById("typeOfChoco55").innerHTML = type[4];
 
 
 var completBtn = document.getElementById("Complete");
-completBtn.onclick = function () {
+completBtn.onclick = function() {
     if (document.getElementById("typeOfChoco1").checked) {
         var totalPrice = (quantity * 1) / 100;
         var n = totalPrice.toFixed(2);
@@ -56,32 +56,29 @@ completBtn.onclick = function () {
         var totalPrice3 = (quantity * 4) / 1000;
         var n3 = totalPrice3.toFixed(2);
         alert(n3 + "$");
-    }
-    else if (document.getElementById("typeOfChoco5").checked) {
+    } else if (document.getElementById("typeOfChoco5").checked) {
         var totalPrice4 = (quantity * 5) / 1000;
         var n4 = totalPrice4.toFixed(2);
         alert(n4 + "$");
-    }
-    else{
-        
+    } else {
+
     }
 }
 
-    myaddress.oninput = function () {
-        if (!this.validity.valid) {
-            myaddress.style.border = "solid 3px red";
-            myaddressInfo.innerHTML = "Your address must be in the correct format. "
-        }
-        else {
-            myaddress.style.borderColor = "green";
-            mymailInfo.style.display = "none"
-        }
+myaddress.oninput = function() {
+    if (!this.validity.valid) {
+        myaddress.style.border = "solid 3px red";
+        myaddressInfo.innerHTML = "Your address must be in the correct format. "
+    } else {
+        myaddress.style.borderColor = "green";
+        mymailInfo.style.display = "none"
     }
+}
 
+a.style.visibility = "hidden";
+check1.onfocus = function() {
+    a.style.visibility = "visible";
+}
+check2.onfocus = function() {
     a.style.visibility = "hidden";
-    check1.onfocus = function () {
-        a.style.visibility = "visible";
-    }
-    check2.onfocus = function () {
-        a.style.visibility = "hidden";
-    }
+}
